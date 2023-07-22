@@ -1,16 +1,20 @@
-# goat_ai
+# GOAT AI
+AI Chatbot Using PaLM API 
 
-A new Flutter project.
 
-## Getting Started
+## Built Using <a name = "tech"></a>
+- **Flutter (Dert)**
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Interface 🤖
+<div name="Screenshots" align="center">
+   <img width=30% src="screenshots\gui.png" alt=""></a>
+   <img width=30% src="screenshots\gui1.png" alt=""></a>
+   <hr>
+   <img width=30% src="screenshots\gui2.png" alt=""></a>
+   <img width=30% src="screenshots\gui3.png" alt=""></a>
+   <hr>
+   <img width=30% src="screenshots\gui4.png" alt=""></a>
+    <img width=30% src="screenshots\gui5.png" alt=""></a>
+   <hr>
+</div>
