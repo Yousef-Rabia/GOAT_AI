@@ -14,6 +14,8 @@ class ChatScreen extends StatelessWidget {
       builder: (BuildContext context, Object? state) {
         return Column(
           children: [
+            if (ChatCubit.get(context).messages.isEmpty)
+              const Text("Welcome to GOAT AI" ,style: TextStyle(color: Colors.blue , fontSize: 22 , fontWeight: FontWeight.bold),),
             Flexible(
                 child: ListView.separated(
               padding: const EdgeInsets.all(8.0),
