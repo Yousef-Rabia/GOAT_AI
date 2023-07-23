@@ -50,11 +50,14 @@ class ChatScreen extends StatelessWidget {
                             width: 2, // Change the border width as desired
                           ),
                         ),
-                        child: TextField(
-                          controller:
-                              ChatCubit.get(context).descriptionController,
-                          decoration: const InputDecoration.collapsed(
-                              hintText: "Question/description"),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: TextField(
+                            controller:
+                                ChatCubit.get(context).descriptionController,
+                            decoration: const InputDecoration.collapsed(
+                                hintText: "Question/description"),
+                          ),
                         ),
                       ),
                     ),
