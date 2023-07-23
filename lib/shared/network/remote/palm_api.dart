@@ -6,22 +6,6 @@ class ChatBotWithPaLM {
     FirebaseFirestore? firestore,
   }) : _firestore = firestore ?? FirebaseFirestore.instance;
 
-  // Future<Map<String, dynamic>> sendMessage(String txt) async {
-  //   final ref = await _firestore
-  //       .collection("discussions")
-  //       .add({'prompt': txt});
-  //
-  //   var docSnapshot = await ref.get();
-  //   Map<String, dynamic> data = docSnapshot.data() as Map<String, dynamic>;
-  //   while(!data.containsKey("response")){
-  //     docSnapshot = await ref.get();
-  //     data = docSnapshot.data() as Map<String, dynamic>;
-  //   }
-  //
-  //
-  //
-  //   return data;
-  // }
 
   Future<Map<String, dynamic>> sendMessage(String txt) async {
     try {
