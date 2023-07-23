@@ -15,8 +15,12 @@ class ChatBotWithPaLM {
 
       do {
         docSnapshot = await ref.get();
-      } while (!docSnapshot.data()!.containsKey("response"));
+        if(docSnapshot.data()!["status"]!= null &&docSnapshot.data()!["status"]["state"] == "ERRORED" )
+          {
+            return {"response": "Sorry I can't answer" };
+          }
 
+      } while (!docSnapshot.data()!.containsKey("response")  );
       return docSnapshot.data()!;
     } catch (e) {
       // Handle any errors that may occur during the process
